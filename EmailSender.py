@@ -32,14 +32,14 @@ for index, row in df.iterrows():
     msg = MIMEMultipart()
     msg['From'] = sender_email
     msg['To'] = recipient_email
-    msg['Subject'] = "Interreg NEXT MED: Proposal for Partnership in Jordan"
+    msg['Subject'] = "Subject..."
     
     # Email body
-    body = f"Dear {recipient_name},\n\nI hope this email finds you well. My name is Kareem, and I am reaching out to you on behalf of LIVINC Jordan, a Creative Community Incubator nestled in the Heart of Nature. We are dedicated to fostering a thriving ecosystem that empowers talents in the Creative Economy to achieve sustainable development.\n\nGiven our shared interests in smart solutions, green economy, and social projects, we believe that collaborating on initiatives such as Interreg NEXT MED could yield significant benefits for both parties.\n\nAt LIVINC Jordan, we offer a range of programs and services tailored to support and nurture creative individuals and projects:\n\n1. ACADEMY: What they don't teach at school!\n2. CREATIVE INCUBATOR: The environment to create and grow!\n3. MARKETPLACE: The showcase channels for your work!\n\nWe understand that the deadline for partnership proposals for Interreg NEXT MED is fast approaching on May 30th. Despite the short notice, we are fully committed to moving swiftly to explore the opportunity to be your Jordan partner.\n\nAttached to this email, you will find a detailed profile of LIVINC Jordan, which provides further insights into our mission, values, and offerings. Additionally, we are more than happy to provide any additional information or materials that you may require to consider our proposal.\n\nWe are genuinely excited about the possibility of partnering with your esteemed organization and are eager to discuss this opportunity further. Please let us know a convenient time for a meeting or call to explore how we can collaborate effectively.\n\nThank you for considering our proposal. We look forward to the possibility of working together to drive positive change and innovation in our shared areas of interest.\n\nWarm regards,\n\nKareem Shadi\nPartnership Manager\nLIVINC Jordan"
+    body = f"Dear {recipient_name},\n\nI hope this email finds you well. My name is..."
     msg.attach(MIMEText(body, 'plain'))
     
     # Attachment
-    filename = "LIVINC Incubator.pdf"
+    filename = "File.pdf"
     attachment = open(filename, "rb")
     
     part = MIMEBase('application', 'octet-stream')
